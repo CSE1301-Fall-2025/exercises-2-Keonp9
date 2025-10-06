@@ -21,7 +21,8 @@ public class E01Stats {
 		chooser.showOpenDialog(null);
 		File f = new File(chooser.getSelectedFile().getPath());
 		Scanner in = new Scanner(f); //making Scanner with a File
-		
+		int sum = 0;
+		int count = 0;
 		
 		
 		//Using scanner to read from a file
@@ -29,6 +30,9 @@ public class E01Stats {
 		//to complete the exercise
 		while(in.hasNextDouble()) {
 			System.out.println(in.nextDouble());
+			sum += in.nextDouble();
+			count++;
 		}
+		System.out.print("Average: " + (sum/count));
 	}
 }

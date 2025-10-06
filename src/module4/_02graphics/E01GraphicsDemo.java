@@ -23,11 +23,16 @@ public class E01GraphicsDemo {
 		//Use the StdDraw API to do the following:
 		
 		//Draw a blue point anywhere you like
-		
+		StdDraw.setPenColor(Color.BLUE);
+		StdDraw.filledCircle(0.5,0.5,.025);
 		//Draw a larger green point someplace else
-
+		StdDraw.setPenColor(Color.GREEN);
+		StdDraw.filledCircle(.1,.1,.05);
 		//Draw an unfilled red triangle somewhere
-
+		StdDraw.setPenColor(Color.RED);
+		double[] x = {.5,.6,.7};
+		double[] y = {.125, .25, .125};
+		StdDraw.polygon(x,y);
 		//Draw a filled yellow circle somewhere
 
 		//Draw a filled blue rectangle somewhere

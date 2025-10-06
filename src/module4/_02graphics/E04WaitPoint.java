@@ -10,9 +10,11 @@ public class E04WaitPoint {
 	 */
 	public static void main(String[] args) {
 		// wait for the mouse to be pressed and released
-
+		while (!StdDraw.mousePressed()){
+			StdDraw.pause(100);
+		}
 		// here, the mouse has been pressed
-
+		
 		// here the mouse is released
 		
 		
